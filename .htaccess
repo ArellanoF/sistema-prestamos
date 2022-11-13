@@ -1,0 +1,6 @@
+RewriteEngine On
+
+#No permite la vista desde el navegador de los archivos
+Options All -Indexes
+#url amigables 
+RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?views=$1
