@@ -1,4 +1,3 @@
-<!-- Page header -->
 <div class="full-box page-header">
     <h3 class="text-left">
         <i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO
@@ -11,25 +10,25 @@
 <div class="container-fluid">
     <ul class="full-box list-unstyled page-nav-tabs">
         <li>
-            <a class="active" href="<?php echo SERVERURL;?>reservation-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
+            <a class="active" href="<?php echo SERVERURL; ?>reservation-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-reservation/"><i class="far fa-calendar-alt"></i> &nbsp; RESERVACIONES</a>
+            <a href="<?php echo SERVERURL; ?>reservation-reservation/"><i class="far fa-calendar-alt"></i> &nbsp; RESERVACIONES</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-pending/"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS</a>
+            <a href="<?php echo SERVERURL; ?>reservation-pending/"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; FINALIZADOS</a>
+            <a href="<?php echo SERVERURL; ?>reservation-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; FINALIZADOS</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-search/"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR POR FECHA</a>
+            <a href="<?php echo SERVERURL; ?>reservation-search/"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR POR FECHA</a>
         </li>
     </ul>
 </div>
 
 <div class="container-fluid">
-    <div class="container-fluid form-neon">
+	<div class="container-fluid form-neon">
         <div class="container-fluid">
             <p class="text-center roboto-medium">AGREGAR CLIENTE O ITEMS</p>
             <p class="text-center">
@@ -39,8 +38,8 @@
             <div>
                 <span class="roboto-medium">CLIENTE:</span> 
                 <span class="text-danger">&nbsp; <i class="fas fa-exclamation-triangle"></i> Seleccione un cliente</span>
-                <form action="" style="display: inline-block !important;">
-                    Carlos Alfaro
+      			<form action="" style="display: inline-block !important;">
+                	Carlos Alfaro
                     <button type="button" class="btn btn-danger"><i class="fas fa-user-times"></i></button>
                 </form>
             </div>
@@ -126,7 +125,7 @@
                 </table>
             </div>
         </div>
-        <form action="" autocomplete="off">
+		<form action="" autocomplete="off">
             <fieldset>
                 <legend><i class="far fa-clock"></i> &nbsp; Fecha y hora de préstamo</legend>
                 <div class="container-fluid">
@@ -165,11 +164,11 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
-                <legend><i class="fas fa-cubes"></i> &nbsp; Otros datos</legend>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
+			<fieldset>
+				<legend><i class="fas fa-cubes"></i> &nbsp; Otros datos</legend>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-md-4">
                             <div class="form-group">
                                 <label for="prestamo_estado" class="bmd-label-floating">Estado</label>
                                 <select class="form-control" name="prestamo_estado_reg" id="prestamo_estado">
@@ -180,12 +179,12 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="form-group">
-                                <label for="prestamo_total" class="bmd-label-floating">Total a pagar en $</label>
+						<div class="col-12 col-md-4">
+							<div class="form-group">
+								<label for="prestamo_total" class="bmd-label-floating">Total a pagar en $</label>
                                 <input type="text" pattern="[0-9.]{1,10}" class="form-control" readonly="" value="100.00" id="prestamo_total" maxlength="10">
-                            </div>
-                        </div>
+							</div>
+						</div>
                         <div class="col-12 col-md-4">
                             <div class="form-group">
                                 <label for="prestamo_pagado" class="bmd-label-floating">Total depositado en $</label>
@@ -198,17 +197,17 @@
                                 <input type="text" pattern="[a-zA-z0-9áéíóúÁÉÍÓÚñÑ#() ]{1,400}" class="form-control" name="prestamo_observacion_reg" id="prestamo_observacion" maxlength="400">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </fieldset>
-            <br><br><br>
-            <p class="text-center" style="margin-top: 40px;">
-                <button type="reset" class="btn btn-raised btn-secondary btn-sm"><i class="fas fa-paint-roller"></i> &nbsp; LIMPIAR</button>
-                &nbsp; &nbsp;
-                <button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
-            </p>
-        </form>
-    </div>
+					</div>
+				</div>
+			</fieldset>
+			<br><br><br>
+			<p class="text-center" style="margin-top: 40px;">
+				<button type="reset" class="btn btn-raised btn-secondary btn-sm"><i class="fas fa-paint-roller"></i> &nbsp; LIMPIAR</button>
+				&nbsp; &nbsp;
+				<button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
+			</p>
+		</form>
+	</div>
 </div>
 
 

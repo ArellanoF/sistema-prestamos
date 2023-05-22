@@ -4,36 +4,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title><?php echo COMPANY; ?></title>
-        <?php include "./vistas/includes/css.php";?>
+	<?php include "./vistas/inc/Link.php"; ?>
 </head>
 <body>
-	<?php 
-	$peticionAjax=false;
-	require_once "./controladores/vistasControlador.php"; 
-	$iv = new vistasControlador();
-	$vistas = $iv->obtener_vistas_controlador();
+	<?php
+		$peticionAjax=false;
+		require_once "./controladores/vistasControlador.php";
+		$IV = new vistasControlador();
 
-	if($vistas == "login" || $vistas == "404" ){
-		require_once "./vistas/contenidos/" .$vistas. "-view.php";
+		$vistas=$IV->obtener_vistas_controlador();
 
-	}else{
+		if($vistas=="login" || $vistas=="404"){
+			require_once "./vistas/contenidos/".$vistas."-view.php";
 
+		}else{
 	?>
 	<!-- Main container -->
 	<main class="full-box main-container">
 		<!-- Nav lateral -->
-		<?php include "./vistas/includes/navlateral.php";?>
+		<?php include "./vistas/inc/NavLateral.php"; ?>
 
 		<!-- Page content -->
 		<section class="full-box page-content">
-		<?php 
-			include "./vistas/includes/navbar.php";
-			include $vistas;
+			<?php 
+				include "./vistas/inc/NavBar.php";
+
+				include  $vistas;
 			?>
 		</section>
-	</main> 
-	<?php } ?>
-        <!-- Scripts -->
-	    <?php include "./vistas/includes/script.php";?>
+	</main>
+	<?php
+		}
+		include "./vistas/inc/Script.php"; 
+	?>
 </body>
 </html>

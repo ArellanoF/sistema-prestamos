@@ -1,4 +1,3 @@
-<!-- Page header -->
 <div class="full-box page-header">
     <h3 class="text-left">
         <i class="fas fa-sync-alt fa-fw"></i> &nbsp; ACTUALIZAR PRÉSTAMO
@@ -11,26 +10,26 @@
 <div class="container-fluid">
     <ul class="full-box list-unstyled page-nav-tabs">
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
+            <a href="<?php echo SERVERURL; ?>reservation-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-reservation/"><i class="far fa-calendar-alt"></i> &nbsp; RESERVACIONES</a>
+            <a href="<?php echo SERVERURL; ?>reservation-reservation/"><i class="far fa-calendar-alt"></i> &nbsp; RESERVACIONES</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-pending/"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS</a>
+            <a href="<?php echo SERVERURL; ?>reservation-pending/"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; FINALIZADOS</a>
+            <a href="<?php echo SERVERURL; ?>reservation-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; FINALIZADOS</a>
         </li>
         <li>
-            <a href="<?php echo SERVERURL;?>reservation-search/"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR POR FECHA</a>
+            <a href="<?php echo SERVERURL; ?>reservation-search/"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR POR FECHA</a>
         </li>
     </ul>
 </div>
 
 <div class="container-fluid">
 
-    <div class="container-fluid form-neon">
+	<div class="container-fluid form-neon">
         <div class="container-fluid">
             <p class="text-center roboto-medium">AGREGAR NUEVO PAGO A ESTE PRÉSTAMO</p>
             <p class="text-center">Este préstamo presenta un pago pendiente por la cantidad de <strong>$50</strong>, puede agregar un pago a este préstamo haciendo clic en el siguiente botón.</p>
@@ -80,7 +79,7 @@
                 </table>
             </div>
         </div>
-        <form action="" autocomplete="off">
+		<form action="" autocomplete="off">
             <fieldset>
                 <legend><i class="far fa-clock"></i> &nbsp; Fecha y hora de préstamo</legend>
                 <div class="container-fluid">
@@ -159,7 +158,7 @@
                 <button type="submit" class="btn btn-raised btn-success btn-sm"><i class="fas fa-sync-alt"></i> &nbsp; ACTUALIZAR</button>
             </p>
         </form>
-    </div>
+	</div>
 
     <!-- MODAL PAGOS -->
     <div class="modal fade" id="ModalPago" tabindex="-1" role="dialog" aria-labelledby="ModalPago" aria-hidden="true">
@@ -203,7 +202,7 @@
             </form>
         </div>
     </div>
-
+    
     <div class="alert alert-danger text-center" role="alert">
         <p><i class="fas fa-exclamation-triangle fa-5x"></i></p>
         <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
